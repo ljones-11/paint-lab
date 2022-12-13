@@ -9,6 +9,8 @@ describe('Decorator', function(){
         decorator = new Decorator();
         paint1 = new Paint(12)
         paint2 = new Paint(10)
+        paint3 = new Paint(10)
+
         room = new Room(30)
     })
 
@@ -32,5 +34,13 @@ describe('Decorator', function(){
         decorator.addPaintToStock(paint2);
         const actual = decorator.checkEnoughPaint(room)
         assert.strictEqual(actual, false)
+    })
+    it('should change room to painted if enough liters', function(){
+        decorator.addPaintToStock(paint1);
+        decorator.addPaintToStock(paint2);
+        decorator.addPaintToStock(paint3);
+        decorator.checkEnoughPaint(room)
+        const actual = room.painted
+        assert.strictEqual(actual, true)
     })
 })

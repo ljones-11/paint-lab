@@ -1,3 +1,6 @@
+
+
+
 const Decorator = function(){
     this.stock = []
 }
@@ -17,7 +20,9 @@ Decorator.prototype.totalLiters = function(){
 
 Decorator.prototype.checkEnoughPaint = function(room){
     if (this.totalLiters() >= room.squareArea ) {
+        room.paintRoom()
         return true
+        
     } else {
         return false
     }
