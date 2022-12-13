@@ -1,0 +1,22 @@
+{
+  "name": "paint-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "decorator.js",
+  "scripts": {
+    "test": "mocha models/specs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljones-11/paint-lab.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ljones-11/paint-lab/issues"
+  },
+  "homepage": "https://github.com/ljones-11/paint-lab#readme",
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
