@@ -1,6 +1,6 @@
-const Paint = function(liters, empty){
+const Paint = function(liters){
     this.liters = liters
-    this.empty = empty
+    this.empty = false
 }
 Paint.prototype.checkCan = function(liters){
     if (this.liters > 0){
