@@ -4,7 +4,7 @@ const Room = require('../room.js')
 describe('Room', function(){
     let room;
     this.beforeEach(function(){
-        room = new Room(30, false);
+        room = new Room(30);
     })
 
     it('should have an area', function(){

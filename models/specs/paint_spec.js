@@ -5,7 +5,7 @@ const Paint = require('../paint.js')
 describe('paint', function(){
     let paint;
     this.beforeEach(function(){
-        paint = new Paint (10,false)
+        paint = new Paint (10)
     })
 
     it('should have liters', function(){
